@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+.background-img {
+  background: url(../assets/img/Background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+.left {
+  width: 443px;
+  height: 552px;
+  background: #013243;
+  border-radius: 10px 0px 0px 10px;
+  text-align: center;
+  box-sizing: border-box;
+
+  h1 {
+    position: relative;
+    top: 45px;
+    font: {
+      family: Roboto;
+      style: normal;
+      weight: bold;
+      size: 36px;
+    }
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+  }
+  p {
+    position: relative;
+    top: 52px;
+    font: {
+      family: Roboto;
+      style: normal;
+      weight: normal;
+      size: 18px;
+    }
+    line-height: 21px;
+    text-align: center;
+    color: #86bfd3;
+  }
+
+  .mock-iphone {
+    position: relative;
+    width: 443px;
+    height: 552px;
+    bottom: 87px;
+  }
+}
+
+.right {
+  width: 419px;
+  height: 552px;
+  background: #ffffff;
+  border: 1px solid #bcbcbc;
+  box-sizing: border-box;
+  border-radius: 0px 10px 10px 0px;
+
+  h1 {
+    top: 45px;
+    left: 62px;
+    position: relative;
+    font: {
+      family: Roboto;
+      style: normal;
+      weight: bold;
+      size: 36px;
+    }
+    line-height: 42px;
+    margin: 0;
+    color: #000000;
+  }
+
+  .email-label {
+    position: relative;
+    left: 62px;
+    top: 66px;
+    margin: 0;
+    font: {
+      family: DM Sans;
+      style: normal;
+      weight: bold;
+      size: 18px;
+    }
+    line-height: 23px;
+    color: #000000;
+  }
+
+  #email-input {
+    position: relative;
+    left: 62px;
+    top: 76px;
+    width: 294px;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0;
+    padding: {
+      left: 16px;
+      top: 19px;
+      bottom: 18px;
+    }
+  }
+  .password-label {
+    position: relative;
+    left: 62px;
+    top: 100px;
+    margin: 0;
+    font: {
+      family: DM Sans;
+      style: normal;
+      weight: bold;
+      size: 18px;
+    }
+    line-height: 23px;
+    color: #000000;
+  }
+  #password-input {
+    position: relative;
+    left: 62px;
+    top: 108px;
+    width: 294px;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0;
+    padding: {
+      left: 16px;
+      top: 19px;
+      bottom: 18px;
+    }
+  }
+
+  .terms {
+    position: relative;
+    display: flex;
+    height: 81px;
+    width: 293px;
+    left: 62px;
+    top: 132px;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+  #terms {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .terms-text {
+    width: 263px;
+    height: 81px;
+    font: {
+      family: Inter;
+      style: normal;
+      weight: normal;
+      size: 18px;
+    }
+    line-height: 27px;
+    color: #000000;
+  }
+  a {
+    color: #013243;
+    font-weight: bold;
+  }
+
+  .create-button {
+    position: relative;
+    width: 294px;
+    height: 60px;
+    left: 62px;
+    top: 156px;
+    font: {
+      family: DM Sans;
+      style: normal;
+      weight: bold;
+      size: 18px;
+    }
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+    background: #013243;
+    border-radius: 5px;
+  }
+}
+
+.tablet {
+  display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    border-radius: 0;
+  }
+  .right {
+    width: 443px;
+    height: 552px;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+@media (min-width: 414px) and (max-width: 767px) {
+
+  .tablet {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .left {
+    border-radius: 0;
+    width:100vw;
+    min-width: 443px;
+    min-height: 552px;
+    box-sizing: border-box;
+  }
+  .right {
+    width:100vw;
+    min-width: 443px;
+    min-height: 552px;
+    border-radius: 0px 0px 10px 10px;
+    box-sizing: border-box;
+  }
+  .background-img{
+    background: none;
+  }
+}
